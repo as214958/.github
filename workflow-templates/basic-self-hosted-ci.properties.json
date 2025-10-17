@@ -1,0 +1,14 @@
+{
+  "name": "Basic Self-Hosted CI Workflow",
+  "description": "A basic CI workflow using the organization's shared self-hosted runner",
+  "iconName": "example-icon",
+  "categories": [
+    "Continuous Integration"
+  ],
+  "filePatterns": [
+    "package.json$",
+    ".*\\.go$",
+    ".*\\.py$",
+    ".*\\.js$"
+  ]
+}

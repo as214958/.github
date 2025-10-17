@@ -1,0 +1,12 @@
+{
+  "name": "Node.js CI with Self-Hosted Runner",
+  "description": "Build and test Node.js projects using the organization's shared self-hosted runner",
+  "iconName": "nodejs",
+  "categories": [
+    "Continuous Integration",
+    "Node.js"
+  ],
+  "filePatterns": [
+    "package.json$"
+  ]
+}

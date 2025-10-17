@@ -1,0 +1,37 @@
+name: Basic Self-Hosted CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup environment
+        run: |
+          echo "Running on shared self-hosted runner"
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+
+      - name: Run build
+        run: |
+          # Add your build commands here
+          echo "Building project..."
+
+      - name: Run tests
+        run: |
+          # Add your test commands here
+          echo "Running tests..."
+
+      - name: Cleanup
+        if: always()
+        run: |
+          # Clean up any temporary files or processes
+          echo "Cleaning up..."
