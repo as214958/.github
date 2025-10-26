@@ -1,1 +1,1 @@
-This github-org is currently only there to share a selfhosted runner with multiple people
+Github org to share and play with selfhosted github runners
